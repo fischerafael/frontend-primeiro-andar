@@ -56,6 +56,7 @@ function Home() {
                     ))}                    
                 </div>                
             </div> 
+            <p>Desenvolvido por <a href="https://designfischer.com/">Rafael Fischer</a></p>
         </div>
     )
 }
