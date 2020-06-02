@@ -1,0 +1,89 @@
+.newroom-container {
+    width: 100%;
+    height: 100vh;
+    background: #eee;
+    display: grid;
+}
+
+.newroom-content {    
+    align-self: center;
+    background: white;
+    justify-self: center;
+    box-shadow: var(--box-shadow);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 25px; 
+    max-width: 900px;
+    position: relative; 
+    min-height: 70vh;  
+}
+
+.newroom-content img {
+    width: 25px;
+}
+
+.newroom-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;     
+    grid-gap: 15px;
+    align-content: center;    
+}
+
+.newroom-inputs {
+    display: grid;
+    align-content: center;
+}
+
+.logo-newroom {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.logo-newroom h2 {
+    padding-top: 10px;
+    margin-left: 15px;
+}
+
+.newroom-img {
+    display: grid;
+    justify-content: center;
+}
+
+.newroom-img img {
+    width: 250px; 
+    height: 300px;           
+}
+
+.newroom-fields {
+    display: grid;
+}
+
+.newroom-fields input {    
+   box-shadow: var(--box-shadow);
+}
+
+.newroom-fields textarea {
+    box-shadow: var(--box-shadow);
+    resize: none;
+    border: none;
+    height: 130px;
+}
+
+.newroom-btn {
+    width: 100%;    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+}
+
+.newroom-btn button {
+    width: 100%;
+}
+
+.newroom-img {    
+    background-position: center;  
+    background-size: cover;
+    background-image: url('https://baladasegura.rs.gov.br/themes/modelo-institucional/images/outros/GD_imgSemImagem.png');
+    margin-bottom: 15px;
+}

@@ -1,0 +1,24 @@
+.search {
+    background: linear-gradient(#333, rgb(70, 70, 70));
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    min-width: 450px;
+    padding: 25px;
+  }
+  
+  .search h2 {
+    margin-bottom: 15px;
+  }
+  
+  form .search-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;  
+  }  
+  
+  .search-results {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    margin-top: 50px;
+  }
