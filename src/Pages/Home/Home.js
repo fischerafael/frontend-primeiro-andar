@@ -4,6 +4,8 @@ import api from '../../services/api'
 import Nav from '../../Components/Nav/Nav'
 import Card from '../../Components/Card/Card'
 import Search from '../../Components/Search/Search'
+import Hero from '../../Components/HeroSection/Hero'
+import Footer from '../../Components/Footer/Footer'
 
 function Home() {
     
@@ -39,6 +41,7 @@ function Home() {
         <div className="container">  
             <Nav  btnTitle="ENTRAR" btnRoute="login"/>          
             <div className="content">
+            <Hero />
                 <Search 
                     citySearch={citySearch}
                     priceSearch={priceSearch}
@@ -58,7 +61,7 @@ function Home() {
                     ))}                    
                 </div>                
             </div> 
-            <p>Desenvolvido por <a href="https://designfischer.com/">Rafael Fischer</a></p>
+            <Footer />
         </div>
     )
 }

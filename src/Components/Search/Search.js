@@ -4,8 +4,8 @@ import './style.css'
 
 function Search({ citySearch, setCitySearch, priceSearch, setPriceSearch }) {
     return (
-        <div className="search">
-            <h2>Filtrar Resultados</h2>
+        <div className="search">            
+            <h2>Filtrar quartos</h2>
             <form>
                 <div className="search-inputs">
                     <div className="city-input">

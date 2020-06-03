@@ -1,0 +1,20 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+}
+
+.logo img {
+    width: 100%; 
+    padding: 50px; 
+}
+
+.copy {
+    align-self: center;
+    justify-self: center;
+}
+
+.copy h1 {
+    font-size: 45px;
+    margin: 15px 0;    
+}
