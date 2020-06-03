@@ -7,6 +7,7 @@ import Search from '../../Components/Search/Search'
 
 function Home() {
     
+    const [initialRooms, setInitialRooms] = useState([])
     const [rooms, setRooms] = useState([])
     const [citySearch, setCitySearch] = useState('')
     const [priceSearch, setPriceSearch] = useState(1500)
@@ -15,12 +16,12 @@ function Home() {
         loadRooms()
     },[])
 
-    useEffect(() => {               
+    useEffect(() => {                      
         FilterRooms()
     }, [citySearch, priceSearch])
 
-    function FilterRooms() {        
-        let filteredRooms = rooms.filter(room =>
+    function FilterRooms() {                
+        let filteredRooms = initialRooms.filter(room =>
             (!citySearch || room.city.toLowerCase().includes(citySearch.toLowerCase())) &&
             (!priceSearch || room.price <= priceSearch)
         )
@@ -30,7 +31,8 @@ function Home() {
     async function loadRooms() {
         const data = await api.get('/showrooms')
         const roomsData = data.data
-        setRooms(roomsData)        
+        setRooms(roomsData)
+        setInitialRooms(roomsData)        
     }
 
     return (
